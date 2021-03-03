@@ -79,7 +79,8 @@ class Exp_Informer(Exp_Basic):
             features=args.features,
             target=args.target,
             timeenc=timeenc,
-            freq=args.freq
+            freq=args.freq,
+            scale=True
         )
         print(flag, len(data_set))
         data_loader = DataLoader(
